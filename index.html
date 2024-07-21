@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goestatic - Freelancing Services</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -34,16 +35,37 @@
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Web Development</h3>
-                    <p>Building responsive and high-quality websites.</p>
+                    <button class="service-btn" data-service="web-development">Web Development</button>
+                    <div class="service-info" id="web-development">
+                        <p>We specialize in building responsive and high-quality websites. Our portfolio includes custom-built sites for various industries, optimized for both performance and user experience.</p>
+                        <ul>
+                            <li>Project 1: E-commerce platform</li>
+                            <li>Project 2: Portfolio website</li>
+                            <li>Project 3: Corporate website</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service">
-                    <h3>Graphic Design</h3>
-                    <p>Creating stunning visuals and graphics.</p>
+                    <button class="service-btn" data-service="graphic-design">Graphic Design</button>
+                    <div class="service-info" id="graphic-design">
+                        <p>Our graphic design services include creating stunning visuals and graphics tailored to your brand. We have designed logos, brochures, and social media content for a variety of clients.</p>
+                        <ul>
+                            <li>Project 1: Logo design for a startup</li>
+                            <li>Project 2: Brochure for a non-profit</li>
+                            <li>Project 3: Social media graphics for a brand</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="service">
-                    <h3>Content Writing</h3>
-                    <p>Providing compelling and SEO-friendly content.</p>
+                    <button class="service-btn" data-service="content-writing">Content Writing</button>
+                    <div class="service-info" id="content-writing">
+                        <p>We provide compelling and SEO-friendly content to help your business grow. From blog posts to website copy, our content writing services are designed to engage and convert.</p>
+                        <ul>
+                            <li>Project 1: Blog series for a tech company</li>
+                            <li>Project 2: Website copy for a service provider</li>
+                            <li>Project 3: Article writing for an industry magazine</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,3 +86,4 @@
     </footer>
 </body>
 </html>
+
