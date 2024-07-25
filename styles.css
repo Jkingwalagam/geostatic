@@ -22,11 +22,10 @@ header .logo-container {
 }
 
 header .logo-image {
-    height: 50px;
-    width: 50px; /* Ensure the width and height are the same for a perfect circle */
+    height: 60px;
+    width: 60px; /* Ensure the width and height are the same for a perfect circle */
     border-radius: 50%;
     object-fit: cover; /* Ensure the image covers the entire area of the container */
-    transform: scale(1.2); /* Scale the image to zoom in */
     margin-right: 15px;
 }
 
@@ -138,11 +137,6 @@ footer ul {
 footer ul li {
     display: inline;
     margin: 0 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 footer ul li a {
