@@ -16,8 +16,18 @@ header {
     padding: 1rem 0;
 }
 
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-image {
+    height: 50px;
+    margin-right: 15px;
+}
+
 header .logo {
-    float: left;
+    margin: 0;
 }
 
 header nav {
