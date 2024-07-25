@@ -21,16 +21,25 @@ header .logo-container {
     align-items: center;
 }
 
-header .logo-image {
+header .logo-wrapper {
     height: 60px;
     width: 60px; /* Ensure the width and height are the same for a perfect circle */
     border-radius: 50%;
+    overflow: hidden; /* Ensures the image doesn't overflow the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-image {
+    height: 100%;
+    transform: scale(1.4); /* Scale the image to zoom in */
     object-fit: cover; /* Ensure the image covers the entire area of the container */
-    margin-right: 15px;
 }
 
 header .logo {
     margin: 0;
+    margin-left: 15px;
 }
 
 header nav {
