@@ -33,7 +33,7 @@ header .logo-wrapper {
 
 header .logo-image {
     height: 100%;
-    transform: scale(1.4); /* Scale the image to zoom in */
+    transform: scale(1.6); /* Increase the scale to zoom in more */
     object-fit: cover; /* Ensure the image covers the entire area of the container */
 }
 
