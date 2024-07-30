@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geostatic - Editing</title>
+    <title>Geostatic - Freelancing Services</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,87 @@
                 </div>
                 <h1 class="logo">Geostatic</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Geostatic</h2>
+            <p>Your gateway to the best freelancing services.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We offer a variety of freelancing services to meet your needs.</p>
+            <div class="services">
+                <div class="service">
+                    <button class="service-btn" data-service="web-development">Web Development</button>
+                    <div class="service-info" id="web-development">
+                        <p>We specialize in building responsive and high-quality websites.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <button class="service-btn" data-service="graphic-design">Graphic Design</button>
+                    <div class="service-info" id="graphic-design">
+                        <p>Our graphic design services include creating stunning visuals and graphics.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <button class="service-btn" data-service="content-writing">Content Writing</button>
+                    <div class="service-info" id="content-writing">
+                        <p>We provide compelling and SEO-friendly content to help your business grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Geostatic is a leading freelancing company committed to delivering high-quality services.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to work with us, please reach out.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Geostatic. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
