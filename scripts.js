@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.service-btn');
+    const serviceButtons = document.querySelectorAll('.service-btn');
 
-    buttons.forEach(button => {
+    serviceButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const serviceId = button.getAttribute('data-service');
-            const info = document.getElementById(serviceId);
-
-            // Toggle the display of the service info
-            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+            const serviceInfo = document.getElementById(button.dataset.service);
+            if (serviceInfo) {
+                serviceInfo.style.display = serviceInfo.style.display === 'block' ? 'none' : 'block';
+            }
         });
     });
 });
