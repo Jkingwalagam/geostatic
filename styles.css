@@ -2,153 +2,62 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
     overflow: hidden;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header .logo-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 header .logo-wrapper {
-    height: 60px;
-    width: 60px; /* Ensure the width and height are the same for a perfect circle */
+    height: 100px;
+    width: 100px; /* Ensure the width and height are the same for a perfect circle */
     border-radius: 50%;
     overflow: hidden; /* Ensures the image doesn't overflow the container */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header .logo-image {
     height: 100%;
-    transform: scale(1.6); /* Increase the scale to zoom in more */
+    transform: scale(2.0); /* Increase the scale to zoom in more */
     object-fit: cover; /* Ensure the image covers the entire area of the container */
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo-image:hover {
+    transform: scale(2.2); /* Slight zoom on hover */
 }
 
 header .logo {
     margin: 0;
-    margin-left: 15px;
-}
-
-header nav {
-    float: right;
-}
-
-header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-header ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-header ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background: #f4f4f4;
     color: #333;
-    padding: 2rem 0;
-    text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.hero .btn {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hero .btn:hover {
-    background: #555;
-}
-
-#services {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-#services .services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-#services .service {
-    margin: 0;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 600px;
-}
-
-#services .service .service-btn {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#services .service .service-btn:hover {
-    background: #555;
-}
-
-#services .service .service-info {
-    display: none;
-    margin-top: 1rem;
-    text-align: left;
-}
-
-#services .service .service-info ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-footer nav {
-    margin-top: 1rem;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
