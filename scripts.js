@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
   const loadingScreen = document.getElementById('loading-screen');
 
-  // Set a timeout to remove the loading screen after 2 seconds
+  // Delay for 1 second to show the loader before fading it out
   setTimeout(() => {
-    loadingScreen.classList.add('hidden'); // Add the 'hidden' class to fade out the loading screen
-  }, 2); // You can adjust this time
+    loadingScreen.classList.add('hidden');
+  }, 1000); // Wait 1 second before starting to hide the loader
 });
 
 // Wait for the page to fully load
